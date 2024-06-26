@@ -1,0 +1,805 @@
+﻿{% load static %}
+<!DOCTYPE html>
+<html lang="fa">
+<!-- Mirrored from ventix.fasitheme.ir/demo/index-2.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 04 Jan 2024 13:08:34 GMT -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Ventix - قالب HTML شخصی و نمونه کار">
+    <title>امیرعباس فغفوری</title>
+    <link rel="shortcut icon" href={% static "assets/img/favicon.png" %} type="image/x-icon">
+    <link href={% static "assets/css/bootstrap.min.css" %} rel="stylesheet">
+    <link href={% static "assets/css/font-awesome.min.css" %} rel="stylesheet">
+    <link href={% static "assets/css/flaticon-set.css" %} rel="stylesheet">
+    <link href={% static "assets/css/swiper-bundle.min.css" %} rel="stylesheet">
+    <link href={% static "assets/css/animate.min.css" %} rel="stylesheet">
+    <link href={% static "assets/css/validnavs.css" %} rel="stylesheet">
+    <link href={% static "assets/css/helper.css" %} rel="stylesheet">
+    <link href={% static "assets/css/unit-test.css" %} rel="stylesheet">
+    <link href={% static "assets/css/style.css" %} rel="stylesheet">
+    <link href={% static "style.html" %} rel="stylesheet">
+    <!--[if lte IE 9]><p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a
+        href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <![endif]--></head>
+<body class="bg-dark bg-fixed onepage-version" style="background-image: url({% static 'assets/img/shape/banner-1.png' %});">
+<div id="preloader">
+    <div id="ventix-preloader" class="ventix-preloader">
+        <div class="animation-preloader">
+            <div class="spinner"></div>
+        </div>
+        <div class="loader">
+            <div class="row">
+                <div class="col-3 loader-section section-left">
+                    <div class="bg"></div>
+                </div>
+                <div class="col-3 loader-section section-left">
+                    <div class="bg"></div>
+                </div>
+                <div class="col-3 loader-section section-right">
+                    <div class="bg"></div>
+                </div>
+                <div class="col-3 loader-section section-right">
+                    <div class="bg"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<header>
+    <nav class="navbar mobile-sidenav onepage-menu mobile-nav-only attr-border navbar-sticky navbar-default validnavs navbar-fixed dark no-background">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu"><i
+                        class="fa fa-bars"></i></button>
+                <a class="navbar-brand" href="index.html"><img src={% static "assets/img/logo-light.png" %} class="logo" alt="لوگو"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-menu"><img src={% static "assets/img/logo-light.png" %} alt="لوگو">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu"><i
+                        class="fa fa-times"></i></button>
+                <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+                    <li><a class="smooth-menu" href="#home">خانه</a></li>
+                    <li><a class="smooth-menu" href="#services">خدمات</a></li>
+                    <li><a class="smooth-menu" href="#about">درباره</a></li>
+                    <li><a class="smooth-menu" href="#portfolio">نمونه کارها</a></li>
+                    <li><a class="smooth-menu" href="#blog">وبلاگ</a></li>
+                    <li><a class="smooth-menu" href="#contact">مخاطب</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="overlay-screen"></div>
+    </nav>
+</header>
+<div class="main-wrapper">
+    <div class="side-navbar-items">
+        <div class="nav-wrapper">
+            <div class="side-navbar">
+                <div class="side-nav-menu"><a class="smooth-menu" href="#home"><img src={% static "assets/img/logo-icon.png" %}
+                                                                                    alt="لوگو"></a></div>
+                <div class="nav-toggle"><img src={% static "assets/img/menu-white.svg" %} alt="منو"></div>
+                <div class="author-social"><input type="checkbox" id="toggle" class="share-toggle" hidden=""><label
+                        for="toggle" class="share-button"><i class="fas fa-plus"></i></label><a href="#"
+                                                                                                class="share-icon facebook"><i
+                        class="fab fa-facebook-f"></i></a><a href="#" class="share-icon twitter"><i
+                        class="fab fa-twitter"></i></a><a href="#" class="share-icon instagram"><i
+                        class="fab fa-instagram"></i></a></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="nav-side">
+                <div class="nav-items simple-menu">
+                    <div class="nav-toggle"><i class="fas fa-times"></i></div>
+                    <div class="nav-item dropdown"><a class="smooth-menu" href="#home">خانه</a>
+
+                        <div class="nav-item-wrapper"></div>
+                    </div>
+                    <div class="nav-item"><a class="smooth-menu" href="#services">خدمات</a>
+                        <div class="nav-item-wrapper"></div>
+                    </div>
+                    <div class="nav-item"><a class="smooth-menu" href="#about">در باره</a>
+                        <div class="nav-item-wrapper"></div>
+                    </div>
+                    <div class="nav-item"><a class="smooth-menu" href="#portfolio">نمونه کارها</a>
+                        <div class="nav-item-wrapper"></div>
+                    </div>
+                    <div class="nav-item"><a class="smooth-menu" href="#blog">وبلاگ</a>
+                        <div class="nav-item-wrapper"></div>
+                    </div>
+                    <div class="nav-item"><a class="smooth-menu" href="#contact">مخاطب</a>
+                        <div class="nav-item-wrapper"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="home" class="banner-style-two-area default-padding" style="background-image: url({% static 'assets/img/shape/8.png' %});">
+        <div class="personal-social">
+            <ul>
+                <li class="facebook"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li class="behance"><a href="#"><i class="fab fa-behance"></i></a></li>
+                <li class="dribbble"><a href="#"><i class="fab fa-dribbble"></i></a></li>
+            </ul>
+        </div>
+        <div class="author-thumb" style="background-image: url({% static 'assets/img/illustration/5.png' %});"></div>
+        <div class="container">
+            <div class="banner-top">
+                <div class="row">
+                    <div class="col-lg-7 pr-50">
+                        <div class="information">
+                            <div class="content"><h2>سلام <img src={% static "assets/img/shape/harnd.png" %} alt="عکس پیدا شد"> من
+                                <br>امیرعباس فغوری</h2>
+                                <h3 class="title"><span class="header-caption" id="page-top"><span
+                                        class="cd-headline clip is-full-width"><span class="cd-words-wrapper"><b
+                                        class="is-visible">توسعه دهنده وب هستم</b><b class="is-hidden">متخصص بک اند هستم</b><b
+                                        class="is-hidden"></b></span></span></span></h3><a
+                                        href="#contact" class="btn-standard mt-10 smooth-menu">الان مرا استخدام کن</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="services" class="expertise-area default-padding-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="heading-left mb-60"><h4 class="sub-title">مهارت شخصی</h4>
+                        <h2 class="title">تخصص من را بررسی کنید</h2></div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="expertise-items">
+                        <div class="expterise-item">
+                            <div class="top">
+                                <div class="icon"><img src={% static "assets/img/html.png" %} alt="عکس پیدا شد"></div>
+                                <div class="fun-fact">
+                                    <div class="counter">
+                                        <div class="timer" data-to="90" data-speed="2000">85</div>
+                                        <div class="operator">%</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bottom"><h4>html</h4></div>
+                        </div>
+                        <div class="expterise-item">
+                            <div class="top">
+                                <div class="icon"><img src={% static "assets/img/css.png" %} alt="عکس پیدا شد"></div>
+                                <div class="fun-fact">
+                                    <div class="counter">
+                                        <div class="timer" data-to="85" data-speed="2000">85</div>
+                                        <div class="operator">%</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bottom"><h4>css</h4></div>
+                        </div>
+                        <div class="expterise-item">
+                            <div class="top">
+                                <div class="icon"><img src={% static "assets/img/js.png" %} alt="عکس پیدا شد"></div>
+                                <div class="fun-fact">
+                                    <div class="counter">
+                                        <div class="timer" data-to="80" data-speed="2000">80</div>
+                                        <div class="operator">%</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bottom"><h4>javascript</h4></div>
+                        </div>
+                        <div class="expterise-item">
+                            <div class="top">
+                                <div class="icon"><img src={% static "assets/img/icon/python.png" %} alt="عکس پیدا شد"></div>
+                                <div class="fun-fact">
+                                    <div class="counter">
+                                        <div class="timer" data-to="90" data-speed="2000">90</div>
+                                        <div class="operator">%</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bottom"><h4>python</h4></div>
+                        </div>
+                        <div class="expterise-item">
+                            <div class="top">
+                                <div class="icon"><img src={% static "assets/img/django.png" %} alt="عکس پیدا شد"></div>
+                                <div class="fun-fact">
+                                    <div class="counter">
+                                        <div class="timer" data-to="95" data-speed="2000">95</div>
+                                        <div class="operator">%</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bottom"><h4>django</h4></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="services-style-two-area default-padding">
+        <div class="container">
+            <div class="service-box">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="heading-left mb-60"><h4 class="sub-title">کاری که من انجام می دهم</h4>
+                            <h2 class="title">تخصص های من</h2></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="service-style-two-items">
+                            <div class="services-nav">
+                                <div class="nav-items">
+                                    <div class="services-button-prev"></div>
+                                    <div class="services-button-next"></div>
+                                </div>
+                            </div>
+                            <div class="services-style-two-carousel swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="services-style-two">
+                                            <div class="row">
+                                                <div class="col-lg-5"><h2 class="bg-text"
+                                                                          style="background-image: url({% static 'assets/img/portfolio/4.jpg' %});">
+                                                    D</h2></div>
+                                                <div class="col-lg-7 pl-50 pl-md-15 pl-xs-15">
+                                                    <div class="services-two-info"><h2>طراحی وب سایت</h2>
+                                                        <p> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
+                                                            با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه
+                                                            و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی
+                                                            تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای
+                                                            کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و
+                                                            آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم
+                                                            افزارها شناخت بیشتری را برای طراحان رایانه ای علی </p>
+                                                        <ul class="service-list mt-30">
+                                                            <li>نگهداری مداوم وب سایت</li>
+                                                            <li>پشتیبانی وردپرس</li>
+                                                            <li>مدیریت رسانه های اجتماعی</li>
+                                                        </ul>
+                                                        <a href="#contact"
+                                                           class="btn btn-md circle btn-theme effect smooth-menu">استخدام
+                                                            کن</a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="services-style-two">
+                                            <div class="row">
+                                                <div class="col-lg-5"><h2 class="bg-text"
+                                                                          style="background-image: url({% static 'assets/img/portfolio/3.jpg' %});">
+                                                    U</h2></div>
+                                                <div class="col-lg-7 pl-50 pl-md-15 pl-xs-15">
+                                                    <div class="services-two-info"><h2>طراحی گرافیکی</h2>
+                                                        <p> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
+                                                            با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه
+                                                            و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی
+                                                            تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای
+                                                            کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و
+                                                            آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با </p>
+                                                        <ul class="service-list mt-30">
+                                                            <li>UI و طراحی تعاملی</li>
+                                                            <li>گرافیک حرکت و انیمیشن.</li>
+                                                            <li>طراحی چاپی</li>
+                                                        </ul>
+                                                        <a href="#contact"
+                                                           class="btn btn-md circle btn-theme effect smooth-menu">استخدام
+                                                            کن</a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="about" class="about-style-one-area default-padding-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="about-style-two-thumb text-center"><img src={% static "assets/img/about/2.jpg" %} alt="عکس پیدا شد">
+                        <div class="info"><h3>جمشید ایرانی</h3><a href="mailto:abc@example.com">hello@ventix.me</a>
+                            <p> 55 خیابان اصلی ، شهر نیویورک </p>
+                            <ul class="achivement">
+                                <li>
+                                    <div class="icon"><i class="fab fa-wordpress"></i></div>
+                                    <div class="info"><h5>توسعه دهنده وردپرس</h5>
+                                        <p>دارای رتبه - آپ ورک</p></div>
+                                </li>
+                                <li>
+                                    <div class="icon"><i class="fab fa-html5"></i></div>
+                                    <div class="info"><h5>توسعه دهنده ارشد HTML</h5>
+                                        <p>مرحله دو فروشنده - صمیمی</p></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 offset-lg-1 mt-50">
+                    <div class="about-style-one-info"><h3 class="sub-title">درمورد من</h3>
+                        <h2 class="title">من می توانم توسعه دکه به مردم کمک می کند</h2>
+                        <p> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک
+                            است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی
+                            تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی
+                            در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم
+                            افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان
+                            فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و
+                            شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات
+                            پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد. </p><a href="#contact"
+                                                                                              class="btn-standard mt-10 smooth-menu">دانلود
+                            CV</a>
+                        <div class="about-item"><h3><i style="color: white" class="fas fa-user"></i> زندگینامه</h3>
+                            <ul class="biography-table">
+                                <li><h5>نام</h5>
+                                    <p>امیرعباس فغفوری</p></li>
+                                <li><h5>روز تولد</h5>
+                                    <p>21 اردیبهشت 1388</p></li>
+                                <li><h5>ایمیل</h5>
+                                    <p>amirabbasfgf@gmail.com</p></li>
+                                <li><h5>اینستاگرام</h5>
+                                    <p>@amirabbasfgf</p></li>
+                            </ul>
+                        </div>
+                        <div class="about-item"><h3><i class="fas fa-rocket"></i> مهارت شخصی</h3>
+                            <ul class="skill-items mt-10">
+                                <li>
+                                    <div class="icon"><i class="fab fa-laravel"></i></div>
+                                    <div class="content"><span>75%</span><h5>برنامه نویسی شی گرا</div>
+                                </li>
+                                <li>
+                                    <div class="icon"><i class="fab fa-react"></i></div>
+                                    <div class="content"><span>90%</span><h5>جلوی آن با React</h5></div>
+                                </li>
+                                <li>
+                                    <div class="icon"><i class="fab fa-html5"></i></div>
+                                    <div class="content"><span>89%</span><h5>پیشرفت پیشکسوت </h5></div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="about-item"><h3><i class="fas fa-graduation-cap"></i> تحصیلات</h3>
+                            <ul class="education-table">
+                                <li><h4>پیشرفت علوم عدالت و پایه</h4><h5>دانشکده سوپر کینگ </h5><span>1400 - 1399</span>
+                                    <p> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از
+                                        طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که
+                                        لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و </p></li>
+                                <li><h4> جونیور مهندس نرم افزار</h4><h5>گوگل این تاچ</h5><span>1399 - حاضر</span>
+                                    <p> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از
+                                        طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که
+                                        لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و </p></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="portfolio" class="project-style-one-area default-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="heading-left"><h4 class="sub-title">کار اخیر</h4>
+                        <h2 class="title">نمایش پروژه های من</h2></div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row mt--50">
+                <div class="col-lg-6 item-center">
+                    <div class="portfolio-style-one">
+                        <div class="thumb-zoom"><img src={% static "assets/img/portfolio/5.jpg" %} alt="عکس پیدا شد"></div>
+                        <div class="pf-item-info">
+                            <div class="content-info"><span>بازار یابی</span>
+                                <h2><a href="#" data-bs-toggle="modal" data-bs-target="#projectSingleModal">عکسبرداری و
+                                    ویرایش</a></h2></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 item-center">
+                    <div class="portfolio-style-one">
+                        <div class="thumb-zoom"><img src={% static "assets/img/portfolio/2.jpg" %} alt="عکس پیدا شد"></div>
+                        <div class="pf-item-info">
+                            <div class="content-info"><span>خلاقانه</span>
+                                <h2><a href="#" data-bs-toggle="modal" data-bs-target="#projectSingleModal">کیفیت در
+                                    طراحی صنعتی</a></h2></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 item-center">
+                    <div class="portfolio-style-one">
+                        <div class="thumb-zoom"><img src={% static "assets/img/portfolio/3.jpg" %} alt="عکس پیدا شد"></div>
+                        <div class="pf-item-info">
+                            <div class="content-info"><span>طرح </span>
+                                <h2><a href="#" data-bs-toggle="modal" data-bs-target="#projectSingleModal">کارتهای
+                                    موکاپ بیزینس آبی</a></h2></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 item-center">
+                    <div class="portfolio-style-one">
+                        <div class="thumb-zoom"><img src={% static "assets/img/portfolio/4.jpg" %} alt="عکس پیدا شد"></div>
+                        <div class="pf-item-info">
+                            <div class="content-info"><span>کسب و کار</span>
+                                <h2><a href="#" data-bs-toggle="modal" data-bs-target="#projectSingleModal">طراحی ساده
+                                    سیاه و سفید </a></h2></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade project-details" id="projectSingleModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="project-details-area">
+                            <div class="container">
+                                <div class="project-details-items">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="project-thumb"><img src={% static "assets/img/portfolio/v1.jpg" %}
+                                                                            alt="تصویر"></div>
+                                        </div>
+                                        <div class="col-xl-12">
+                                            <div class="project-details mt-60 mt-xs-30">
+                                                <div class="top-info">
+                                                    <div class="row">
+                                                        <div class="col-lg-5 pl-50 pl-md-15 pl-xs-15 order-lg-last">
+                                                            <ul class="gallery-project-basic-info">
+                                                                <li>
+                                                                    <div class="info"><b>مشتری:</b> میهمان معتبر</div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="info"><b>نوع پروژه:</b> رشد وب سایت
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="info"><b>تاریخ:</b> 6 آذر 1402</div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="info"><b>آدرس:</b> ایالت یونایتد نیویورک
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-lg-7"><h2>بهترین راه حل های دیجیتال</h2>
+                                                            <p> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
+                                                                چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون
+                                                                بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و
+                                                                برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با
+                                                                هدف بهبود ابزارهای کاربردی می باشد، کتابهای </p></div>
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-40 mb-40">
+                                                    <div class="col-lg-5 pr-50 pr-md-15 pr-xs-15">
+                                                        <div class="check-list">
+                                                            <div class="single-list"><h4>بهینه سازی سیار</h4>
+                                                                <p> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
+                                                                    صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها
+                                                                    و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که
+                                                                    لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز،
+                                                                    و </p></div>
+                                                            <div class="single-list"><h4>اتوماسیون بازاریابی</h4>
+                                                                <ul class="list-disc">
+                                                                    <li>بازاریابی از طریق رسانه های اجتماعی</li>
+                                                                    <li>بهینه سازی موتور جستجو (seo)</li>
+                                                                    <li>روابط عمومی</li>
+                                                                    <li>مدیریت دیجیتالی</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-7">
+                                                        <div class="thumb-grid"><img src={% static "assets/img/portfolio/v2.jpg" %}
+                                                                                     alt="تصویر"><img
+                                                                src={% static "assets/img/portfolio/v3.jpg" %} alt="تصویر"></div>
+                                                    </div>
+                                                </div>
+                                                <p> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+                                                    استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در
+                                                    ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز،
+                                                    و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای
+                                                    زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و
+                                                    متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان
+                                                    رایانه ای علی </p>
+                                                <div class="row mt-50 mt-xs-30">
+                                                    <div class="col-lg-6 col-md-6"><img
+                                                            src={% static "assets/img/portfolio/13.jpg" %} alt="تصویر"></div>
+                                                    <div class="col-lg-6 col-md-6 mt-xs-30"><img
+                                                            src={% static "assets/img/portfolio/12.jpg" %} alt="تصویر"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="testimonial-style-one-area default-padding-bottom">
+        <div class="container">
+            <div class="testimonial-style-one-box">
+                <div class="row">
+                    <div class="col-lg-8 offset-lg-2">
+                        <div class="site-heading text-center"><h4 class="sub-title">توصیفات </h4>
+                            <h2 class="title">بازخورد مشتریان</h2>
+                            <div class="devider"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-10 offset-lg-1">
+                        <div class="testimonial-carousel text-center swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="testimonial-style-one">
+                                        <div class="item">
+                                            <div class="thumb"><img src={% static "assets/img/team/1.png" %} alt="عکس پیدا شد">
+                                            </div>
+                                            <div class="content"><p> “ لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
+                                                صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه
+                                                و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد
+                                                نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای
+                                                زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان
+                                                را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی
+                                                الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت
+                                                می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت
+                                                تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و
+                                                جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار
+                                                گیرد.” </p></div>
+                                            <div class="provider">
+                                                <div class="rating"><i class="fas fa-star"></i><i
+                                                        class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                        class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                                                <div class="info"><h4>متیو جی وایمن</h4><span>مشاور ارشد</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="testimonial-style-one">
+                                        <div class="item">
+                                            <div class="thumb"><img src={% static "assets/img/team/4.png" %} alt="عکس پیدا شد">
+                                            </div>
+                                            <div class="content"><p> “ لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
+                                                صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه
+                                                و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد
+                                                نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای
+                                                زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان
+                                                را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی
+                                                الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت
+                                                می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت
+                                                تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و
+                                                جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار
+                                                گیرد.” </p></div>
+                                            <div class="provider">
+                                                <div class="rating"><i class="fas fa-star"></i><i
+                                                        class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                        class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                                                <div class="info"><h4>متیو جی وایمن</h4><span>مشاور ارشد</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="testimonial-style-one">
+                                        <div class="item">
+                                            <div class="thumb"><img src={% static "assets/img/team/2.png" %} alt="عکس پیدا شد">
+                                            </div>
+                                            <div class="content"><p> “ لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
+                                                صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه
+                                                و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد
+                                                نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای
+                                                زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان
+                                                را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی
+                                                الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت
+                                                می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت
+                                                تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و
+                                                جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار
+                                                گیرد.” </p></div>
+                                            <div class="provider">
+                                                <div class="rating"><i class="fas fa-star"></i><i
+                                                        class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                        class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                                                <div class="info"><h4>جمشید خارجی</h4><span>مدیر بازاریابی</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="brand-style-one-area relative text-center">
+        <div class="container">
+            <div class="brand-heading">
+                <div class="row"><h3> رضایت عالی <strong>10K+ </strong> مشتری</h3></div>
+            </div>
+            <div class="brand-style-one">
+                <div class="row">
+                    <div class="col-lg-10 offset-lg-1">
+                        <div class="brand5col swiper">
+                            <div class="swiper-wrapper align-center">
+                                <div class="swipe-rslide"><img src={% static "assets/img/brand/1.png" %} alt="تصویر"></div>
+                                <div class="swiper-slide"><img src={% static "assets/img/brand/2.png" %} alt="تصویر"></div>
+                                <div class="swiper-slide"><img src={% static "assets/img/brand/4.png" %} alt="تصویر"></div>
+                                <div class="swiper-slide"><img src={% static "assets/img/brand/5.png" %} alt="تصویر"></div>
+                                <div class="swiper-slide"><img src={% static "assets/img/brand/3.png" %} alt="تصویر"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="blog" class="home-blog default-padding-top bottom-less">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="site-heading text-center"><h4 class="sub-title">اخبار و مقاله</h4>
+                        <h2 class="title">آخرین وبلاگ</h2>
+                        <div class="devider"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="blog-style-one mb-30 col-xl-4 col-md-6">
+                    <div class="item">
+                        <div class="thumb"><a href="blog-single-with-sidebar.html"><img src={% static "assets/img/blog/1.jpg" %}
+                                                                                        alt="تصویر"></a>
+                            <div class="inner-date"><strong>24</strong> آذر 1402</div>
+                        </div>
+                        <div class="info"><h4><a href="blog-single-with-sidebar.html">بهترین روش ها برای وسط چین کردن
+                            صفحه !</a></h4>
+                            <div class="meta">
+                                <ul>
+                                    <li><a href="#">سریسو ماته</a></li>
+                                    <li><a href="#">16 کامنت ها</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-style-one mb-30 col-xl-4 col-md-6">
+                    <div class="item">
+                        <div class="thumb"><a href="blog-single-with-sidebar.html"><img src={% static "assets/img/blog/2.jpg" %}
+                                                                                        alt="تصویر"></a>
+                            <div class="inner-date"><strong>17</strong> بهمین 1402</div>
+                        </div>
+                        <div class="info"><h4><a href="blog-single-with-sidebar.html">عدم پذیرش بیان خاص عدم پذیرش بیان
+                            خاص</a></h4>
+                            <div class="meta">
+                                <ul>
+                                    <li><a href="#">سریسو ماته</a></li>
+                                    <li><a href="#">29 کامنت ها</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-style-one mb-30 col-xl-4 col-md-6">
+                    <div class="item">
+                        <div class="thumb"><a href="blog-single-with-sidebar.html"><img src={% static "assets/img/blog/3.jpg" %}
+                                                                                        alt="تصویر"></a>
+                            <div class="inner-date"><strong>08</strong> مرداد 1399</div>
+                        </div>
+                        <div class="info"><h4><a href="blog-single-with-sidebar.html">غرق شدن مربوط به از بین بردن مطلوب
+                            است.</a></h4>
+                            <div class="meta">
+                                <ul>
+                                    <li><a href="#">سریسو ماته</a></li>
+                                    <li><a href="#">46 کامنت ها</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contact" class="contact-area contact-page overflow-hidden default-padding"
+         style="background-image: url({% static 'assets/img/shape/map-light.png' %});">
+        <div class="container">
+            <div class="row">
+                <div class="col-tact-stye-one col-lg-5 pr-50 pr-md-15 pr-xs-15">
+                    <div class="contact-style-one-info">
+                        <div class="top-info"><h2 class="gradient-text">بیایید صحبت کنیم</h2>
+                            <div class="call"><img src={% static "assets/img/icon/call.png" %} alt="عکس پیدا شد"><a
+                                    class="phone-link" href="tel:+4733378901">+4733378901</a></div>
+                        </div>
+                        <ul class="contact-address">
+                            <li>
+                                <div class="info"><h4>محل</h4>
+                                    <p> 55 خیابان اصلی ، خیابان بزرگ <br>بلوک ، شهر نیویورک </p></div>
+                            </li>
+                            <li>
+                                <div class="info"><h4>ایمیل رسمی</h4><a href="mailto:info@digital.com.com">info@digital.com</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <p class="copyright"> &copy; 1402 ونتیکس.کلیه حقوق محفوظ است </p></div>
+                </div>
+                <div class="col-tact-stye-one col-lg-7 pl-60 pl-md-15 pl-xs-15 mt-md-50 mt-xs-50">
+                    <div class="contact-form-style-one">
+                        <form action="https://ventix.fasitheme.ir/demo/assets/mail/contact.php" method="POST"
+                              class="contact-form contact-form mt-30">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="form-group"><input class="form-control" id="name" name="name"
+                                                                   placeholder="نام" type="text"><span
+                                            class="alert-error"></span></div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="form-group"><input class="form-control" id="email" name="email"
+                                                                   placeholder="ایمیل *" type="email"><span
+                                            class="alert-error"></span></div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group"><input class="form-control" id="phone" name="phone"
+                                                                   placeholder="تلفن" type="text"><span
+                                            class="alert-error"></span></div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="form-group comments"><textarea class="form-control" id="comments"
+                                                                               name="comments"
+                                                                               placeholder="در مورد پروژه برای ما بگوییدt *"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <button type="submit" name="submit" id="submit"><i class="fa fa-paper-plane"></i> در
+                                        تماس باشید
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 alert-notification">
+                                <div id="message" class="alert-msg"></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src={% static "assets/js/jquery-3.6.0.min.js" %}></script>
+<script src={% static "assets/js/bootstrap.bundle.min.js" %}></script>
+<script src={% static "assets/js/jquery.appear.js" %}></script>
+<script src={% static "assets/js/jquery.easing.min.js" %}></script>
+<script src={% static "assets/js/swiper-bundle.min.js" %}></script>
+<script src={% static "assets/js/progress-bar.min.js" %}></script>
+<script src={% static "assets/js/circle-progress.js" %}></script>
+<script src={% static "assets/js/isotope.pkgd.min.js" %}></script>
+<script src={% static "assets/js/imagesloaded.pkgd.min.js" %}></script>
+<script src={% static "assets/js/count-to.js" %}></script>
+<script src={% static "assets/js/jquery.scrolla.min.js" %}></script>
+<script src={% static "assets/js/ScrollOnReveal.js" %}></script>
+<script src={% static "assets/js/YTPlayer.min.js" %}></script>
+<script src={% static "assets/js/validnavs.js" %}></script>
+<script src={% static "assets/js/gsap.js" %}></script>
+<script src={% static "assets/js/typed.js" %}></script>
+<script src={% static "assets/js/TweenMax.min.js" %}></script>
+<script src={% static "assets/js/main.js" %}></script>
+</body>
+<!-- Mirrored from ventix.fasitheme.ir/demo/index-2.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 04 Jan 2024 13:08:37 GMT -->
+</html>
